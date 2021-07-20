@@ -17,5 +17,28 @@ title-page:
     font-color: $heading-font-color
 
 admonition:
-  column-rule-color: AAAAAA
+  column-rule-color: 888888
+
+header:
+  height: $base-line-height-length * 5
+  padding: [0, 1, $base-line-height-length / 2, 1]
+  vertical-align: bottom
+  line-height: 1
+  border-color: 888888
+  border-width: 0.25
+  text-transform: uppercase
+  recto:
+    right:
+      content: '{section-or-chapter-title}'
+  verso:
+    left:
+      content: $header-recto-right-content
+
+footer:
+  height: $base-line-height-length * 5
+  padding: [$base-line-height-length / 2, 1, 0, 1]
+  vertical-align: top
+  border-color: $header-border-color
+  border-width: $header-border-width
+
 
